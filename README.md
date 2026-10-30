@@ -1,9 +1,7 @@
-# Aventura EPIK II · Modo desarrollador
+# Aventura EPIK II · Desarrollador 0.9.1
 
-Prototipo narrativo y educativo de la secuela, independiente de la primera entrega.
+Edición unificada protegida: catálogo, 15 escenas, 7 actividades, presentación, música, editor lunar, guías y propuestas identificadas.
 
-El contenido de esta vista está cifrado con AES-256-GCM y PBKDF2-SHA256 (600 000 iteraciones). La contraseña no se incluye en el repositorio. El código fuente de trabajo y la documentación se conservan en el proyecto local del autor.
+Acceso: https://jiruma1004.github.io/Aventura-EPIK2/
 
-Incluye prólogo, secuestro de Paola, gag espacial de Iván y consola de Ignitia: diagrama de fuerzas, empuje y umbral ideal de escape. Añade combate espacial con cañón derivativo, encuentro exponencial, megacañón logarítmico, diálogo animado de Kadsumi y selector de escenarios de prueba. El guion y las ilustraciones siguen en revisión. Recursos comprimidos sin pérdida visual; el sitio usa index.html y dos fragmentos cifrados payload-1.js y payload-2.js.
-
-No contiene listas de estudiantes, sesiones ni credenciales del primer juego.
+Contenido cifrado con AES-256-GCM y PBKDF2-SHA256. La contraseña no se publica ni se almacena. El juego original permanece separado. El orden definitivo de campaña sigue abierto.
