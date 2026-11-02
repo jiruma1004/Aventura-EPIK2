@@ -1,6 +1,6 @@
-# Aventura EPIK II · Desarrollador 0.9.1
+# Aventura EPIK II · Desarrollador 0.10.0
 
-Edición unificada protegida: catálogo, 15 escenas, 7 actividades, presentación, música, editor lunar, guías y propuestas identificadas.
+Edición unificada protegida: catálogo, 13 páginas de cómic, 8 actividades, Mudsumaki, presentación, música, editor lunar, guías y propuestas identificadas.
 
 Acceso: https://jiruma1004.github.io/Aventura-EPIK2/
 
