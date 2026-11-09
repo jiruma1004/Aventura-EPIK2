@@ -1,7 +1,9 @@
-# Aventura EPIK II · Desarrollador 0.10.1
+# Aventura EPIK II · Desarrollador 0.11.0
 
-Edición unificada protegida: catálogo, 13 escenas (ceremonia animada y 12 páginas de cómic), 8 actividades, Mudsumaki, presentación, música, editor lunar, guías y propuestas identificadas.
+Campaña breve con presentación RPG, tres partidas locales, combate espacial con cuatro cañones, Mudsumaki, revelación de Kadsumi y batalla final 2D con cálculos protegidos. Incluye biblioteca de escenas y actividades, editor lunar y prompts musicales.
 
-Acceso: https://jiruma1004.github.io/Aventura-EPIK2/
+Jugar: https://jiruma1004.github.io/Aventura-EPIK2/?v=0.11.0&view=campana.html
 
-Contenido cifrado con AES-256-GCM y PBKDF2-SHA256. La contraseña no se publica ni se almacena. El juego original permanece separado. El orden definitivo de campaña sigue abierto.
+Biblioteca: https://jiruma1004.github.io/Aventura-EPIK2/?v=0.11.0
+
+Entrega cifrada con AES-256-GCM y PBKDF2-SHA256. La contraseña no se publica ni almacena. Las partidas se guardan en cada navegador. El juego original permanece separado. Duración y dificultad pendientes de pilotaje con estudiantes.
