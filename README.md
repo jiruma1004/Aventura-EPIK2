@@ -1,9 +1,11 @@
-# Aventura EPIK II · Desarrollador 0.11.0
+# Aventura EPIK II · Desarrollador 0.12.0
 
-Campaña breve con presentación RPG, tres partidas locales, combate espacial con cuatro cañones, Mudsumaki, revelación de Kadsumi y batalla final 2D con cálculos protegidos. Incluye biblioteca de escenas y actividades, editor lunar y prompts musicales.
+Campaña con presentación de cómic, tres partidas locales, prólogo ilustrado, combate espacial, las cuatro puertas de Mudsumaki, transformación de Kadsumi y revelación de su nombre Madsuki, salones de rotación y fuerzas, batalla final, rescate de Iván y regreso a Epithea. Las etapas siguen este recorrido; las puertas y los dos primeros salones admiten orden libre. Conserva la biblioteca de actividades, el editor lunar y las guías.
 
-Jugar: https://jiruma1004.github.io/Aventura-EPIK2/?v=0.11.0&view=campana.html
+Cada partida permite elegir entre tres protagonistas: chico, chica o personaje no binario. La elección se conserva en la introducción, las viñetas, la exploración y la batalla, con las mismas mecánicas y dificultad.
 
-Biblioteca: https://jiruma1004.github.io/Aventura-EPIK2/?v=0.11.0
+Jugar: https://jiruma1004.github.io/Aventura-EPIK2/?v=0.12.0
 
-Entrega cifrada con AES-256-GCM y PBKDF2-SHA256. La contraseña no se publica ni almacena. Las partidas se guardan en cada navegador. El juego original permanece separado. Duración y dificultad pendientes de pilotaje con estudiantes.
+Biblioteca: https://jiruma1004.github.io/Aventura-EPIK2/?v=0.12.0&view=catalogo.html
+
+Contenido cifrado con AES-256-GCM y PBKDF2-SHA256. La contraseña no se publica ni se almacena. Las partidas se guardan en cada navegador. Las fotografías de referencia no forman parte de la entrega. El juego original permanece separado. Duración y dificultad pendientes de pilotaje con estudiantes.
