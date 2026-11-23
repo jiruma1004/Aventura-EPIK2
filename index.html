@@ -1,19 +1,18 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><meta name="referrer" content="same-origin"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' blob: 'sha256-doa3A6WRNoTre5Z4Elowg7Py9vTMUunnU5b4+nTmB3I='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self'; connect-src 'self'; frame-src 'self' blob:; object-src 'none'; base-uri 'none'; form-action 'none'"><title>Aventura EPIK II · 0.12.14</title><style>
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><meta name="referrer" content="same-origin"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' blob: 'sha256-clc304m5GWYXx8Enuyc1rrxXJ6L9xUjUeZtvceboKGk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self'; connect-src 'self'; frame-src 'self' blob:; object-src 'none'; base-uri 'none'; form-action 'none'"><title>Aventura EPIK II · 0.12.15</title><style>
 :root{color-scheme:dark;font-family:system-ui;color:#eee4cc;background:#0b1521}*{box-sizing:border-box}body{margin:0;min-height:100dvh;display:grid;place-items:center;background:radial-gradient(ellipse at 60% 20%,#24504b55,transparent 60%),#0b1521}.gate{width:min(510px,92vw);padding:32px;border:1px solid #dabb7766;border-radius:16px;background:#142331}h1{font:38px Georgia;color:#edcb89}p{line-height:1.6;color:#b9cad2}label{display:block;margin:24px 0 8px}input,button,select{font:inherit;border-radius:6px;padding:12px;border:1px solid #80999d;background:#102332;color:#f5e5c3}input{width:100%}button{cursor:pointer}button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #efcf8d;outline-offset:3px}.gate select{width:100%}.gate button{width:100%;margin-top:14px;background:#e5c68e;color:#142331;font-weight:bold}button:disabled{opacity:.5}small{color:#c6b58d}#status{min-height:2em;font-size:14px}html{height:100%;overscroll-behavior:none}.unlocked{display:flex;flex-direction:column;align-items:stretch;justify-content:flex-start;height:100dvh;min-height:0;overflow:hidden;padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left)}.release-nav{flex:0 0 auto;min-height:48px;display:flex;align-items:center;gap:8px;padding:4px 10px;white-space:nowrap;border-bottom:1px solid #dabb7744;background:#0d1c2a}.release-nav strong{font-size:12px;color:#edcb89;margin-right:auto}.release-nav button,.release-nav select{font-size:12px;padding:7px 9px;min-height:40px;min-width:0}#release-frame{display:block;flex:1 1 0;min-height:0;min-width:0;border:0;width:100%;height:0;background:#0b1521}@media(max-width:650px){.release-nav strong{display:none}.release-nav{gap:4px;padding:3px 5px;min-height:46px}.release-nav button,.release-nav select{flex:1;padding:6px;font-size:11px}}@media(max-height:520px){.release-nav{min-height:42px;padding-block:2px}.release-nav button,.release-nav select{min-height:36px;font-size:11px}}
 
-</style></head><body><main class="gate"><small>AVENTURA EPIK II · 0.12.14</small><h1 id="gate-title">Una señal desde la Luna</h1><p id="gate-intro">Historia, exploración y retos de física.<br>Tu aventura continúa desde este navegador.</p><label for="gate-language">Idioma / Language</label><select id="gate-language"><option value="es">Español</option><option value="en">English</option></select><form id="gate-form"><label for="password">Contraseña de acceso</label><input id="password" type="password" autocomplete="current-password" required><button id="unlock">Comenzar aventura →</button><p id="status" role="status" aria-live="polite">Listo para comenzar.</p></form></main><script>'use strict';
-const payload={"version":"0.12.14","salt":"vLxNkPVFSLFE3Bh/9dt5CQ==","iv":"qzd1E8pC8d+IKmVR","iterations":600000,"core":"game-8f89a73316ed.bin","bytes":448458,"sha256":"8f89a73316ed6b77787370c4988efe74c3daa669e37e23304db3ea741d32d368"};
-const decode=s=>{const binary=atob(s),bytes=new Uint8Array(binary.length);for(let i=0;i<binary.length;i++)bytes[i]=binary.charCodeAt(i);return bytes;};
+</style></head><body><main class="gate" aria-busy="true"><small>AVENTURA EPIK II · 0.12.15</small><h1 id="gate-title">Una señal desde la Luna</h1><p id="gate-intro">Historia, exploración y retos de física.<br>Tu aventura continúa desde este navegador.</p><label for="gate-language">Idioma / Language</label><select id="gate-language"><option value="es">Español</option><option value="en">English</option></select><form id="gate-form"><button id="unlock">Comenzar aventura →</button><p id="status" role="status" aria-live="polite">Listo para comenzar.</p></form></main><script>'use strict';
+const payload={"version":"0.12.15","format":"gzip-json","core":"game-706dbc0f81b5.bin","bytes":463440,"sha256":"706dbc0f81b5a71cd1cdebddae8b5f6020d06ba2c63694cb4001da07029bdfe9"};
 const siteRoot=new URL('./',location.href);
 const languageKey='epik2:language:v1';
 let language='es';
 try{language=new URLSearchParams(location.search).get('lang')||localStorage.getItem(languageKey)||'es';}catch{}
 if(!['es','en'].includes(language))language='es';
-const words={es:{adventure:'Mi aventura',lock:'Cerrar acceso',expand:'⛶ Extender pantalla',reduce:'↙ Reducir pantalla',unavailable:'Pantalla completa no disponible · F11',opening:'Abriendo la aventura…',context:'Abre esta página mediante HTTPS o localhost.',download:'No se completó la descarga. Revisa tu conexión y vuelve a intentar.',password:'No se pudo abrir. Revisa la contraseña y vuelve a intentar.',title:'Una señal desde la Luna',intro:'Historia, exploración y retos de física. Tu aventura continúa desde este navegador.',label:'Contraseña de acceso',start:'Comenzar aventura →',ready:'Listo para comenzar.',languageHint:'Idioma: regresa al menú conservando las etapas completadas.'},en:{adventure:'My adventure',lock:'Lock game',expand:'⛶ Fullscreen',reduce:'↙ Exit fullscreen',unavailable:'Fullscreen unavailable · F11',opening:'Opening the adventure…',context:'Open this page using HTTPS or localhost.',download:'Download incomplete. Check your connection and try again.',password:'Could not unlock. Check the password and try again.',title:'A signal from the Moon',intro:'Story, exploration and physics challenges. Your adventure continues in this browser.',label:'Access password',start:'Start adventure →',ready:'Ready to begin.',languageHint:'Language: returns to the menu, keeping completed stages.'}};
+const words={es:{adventure:'Mi aventura',expand:'⛶ Extender pantalla',reduce:'↙ Reducir pantalla',unavailable:'Pantalla completa no disponible · F11',opening:'Abriendo la aventura…',context:'Abre esta página mediante HTTPS o localhost.',download:'No se completó la descarga. Revisa tu conexión y vuelve a intentar.',title:'Una señal desde la Luna',intro:'Historia, exploración y retos de física. Tu aventura continúa desde este navegador.',start:'Comenzar aventura →',ready:'Listo para comenzar.',languageHint:'Idioma: regresa al menú conservando las etapas completadas.'},en:{adventure:'My adventure',expand:'⛶ Fullscreen',reduce:'↙ Exit fullscreen',unavailable:'Fullscreen unavailable · F11',opening:'Opening the adventure…',context:'Open this page using HTTPS or localhost.',download:'Download incomplete. Check your connection and try again.',title:'A signal from the Moon',intro:'Story, exploration and physics challenges. Your adventure continues in this browser.',start:'Start adventure →',ready:'Ready to begin.',languageHint:'Language: returns to the menu, keeping completed stages.'}};
 const word=key=>words[language][key];
 function selectLanguage(value){language=value==='en'?'en':'es';document.documentElement.lang=language;try{localStorage.setItem(languageKey,language);}catch{}}
 function languageSelect(id){return '<select id="'+id+'" aria-label="Idioma / Language"><option value="es">Español</option><option value="en">English</option></select>';}
-function updateGate(){document.documentElement.lang=language;document.getElementById('gate-title').textContent=word('title');document.getElementById('gate-intro').textContent=word('intro');document.querySelector('label[for="password"]').textContent=word('label');document.getElementById('unlock').textContent=word('start');document.getElementById('status').textContent=word('ready');document.getElementById('gate-language').value=language;}
+function updateGate(){document.documentElement.lang=language;document.getElementById('gate-title').textContent=word('title');document.getElementById('gate-intro').textContent=word('intro');document.getElementById('unlock').textContent=word('start');document.getElementById('status').textContent=word('ready');document.getElementById('gate-language').value=language;}
 
 // Navigation allowlist is a product boundary, not proof of honest gameplay.
 function studentRoute(route){
@@ -28,7 +27,7 @@ function studentRoute(route){
 }
 function mountStudent(archive){
   const media=Object.fromEntries(Object.entries(archive.media).map(([name,item])=>[name,new URL(item.path,siteRoot).href]));
-  document.body.innerHTML='<nav class="release-nav" aria-label="Aventura"><strong>EPIK II · '+archive.version+'</strong><button id="adventure">'+word('adventure')+'</button>'+languageSelect('game-language')+'<button id="expand-screen" aria-pressed="false">'+word('expand')+'</button><button id="lock">'+word('lock')+'</button></nav><iframe allow="autoplay; fullscreen" allowfullscreen id="release-frame" title="Aventura EPIK II"></iframe>';
+  document.body.innerHTML='<nav class="release-nav" aria-label="Aventura"><strong>EPIK II · '+archive.version+'</strong><button id="adventure">'+word('adventure')+'</button>'+languageSelect('game-language')+'<button id="expand-screen" aria-pressed="false">'+word('expand')+'</button></nav><iframe allow="autoplay; fullscreen" allowfullscreen id="release-frame" title="Aventura EPIK II"></iframe>';
   document.body.classList.add('unlocked');
   const frame=document.getElementById('release-frame');let currentScript=null;
   function render(route,push=true){
@@ -47,31 +46,23 @@ function mountStudent(archive){
   const openInitial=()=>{const target=initial();render(target.name+target.search,false);};
   window.addEventListener('message',e=>{if(e.source===frame.contentWindow&&e.origin===location.origin&&typeof e.data?.epikStudentRoute==='string')render(e.data.epikStudentRoute);});
   const picker=document.getElementById('game-language');picker.value=language;picker.title=word('languageHint');
-  picker.onchange=()=>{selectLanguage(picker.value);document.getElementById('adventure').textContent=word('adventure');document.getElementById('lock').textContent=word('lock');picker.title=word('languageHint');update();render('campana.html?menu=1');};
+  picker.onchange=()=>{selectLanguage(picker.value);document.getElementById('adventure').textContent=word('adventure');picker.title=word('languageHint');update();render('campana.html?menu=1');};
   document.getElementById('adventure').onclick=()=>render('campana.html?menu=1');
-  document.getElementById('lock').onclick=()=>location.reload();
   const expand=document.getElementById('expand-screen');
   const update=()=>{expand.textContent=document.fullscreenElement?word('reduce'):word('expand');expand.setAttribute('aria-pressed',String(Boolean(document.fullscreenElement)));};
   expand.onclick=async()=>{try{if(document.fullscreenElement)await document.exitFullscreen();else await document.documentElement.requestFullscreen();}catch{expand.textContent=word('unavailable');}};
   document.addEventListener('fullscreenchange',update);window.addEventListener('popstate',openInitial);openInitial();
 }
-document.getElementById('gate-form').addEventListener('submit',async event=>{
-  event.preventDefault();const button=document.getElementById('unlock'),status=document.getElementById('status'),field=document.getElementById('password');
+async function openAdventure(){
+  const button=document.getElementById('unlock'),status=document.getElementById('status');
   button.disabled=true;status.textContent=word('opening');
   try{
-    if(!crypto.subtle)throw new Error('context');
     const response=await fetch(new URL(payload.core,siteRoot),{cache:'force-cache'});if(!response.ok)throw new Error('download');
-    const encrypted=await response.arrayBuffer();if(encrypted.byteLength!==payload.bytes)throw new Error('download');
-    const digest=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',encrypted)),v=>v.toString(16).padStart(2,'0')).join('');if(digest!==payload.sha256)throw new Error('download');
-    const material=await crypto.subtle.importKey('raw',new TextEncoder().encode(field.value),'PBKDF2',false,['deriveKey']);
-    const key=await crypto.subtle.deriveKey({name:'PBKDF2',salt:decode(payload.salt),iterations:payload.iterations,hash:'SHA-256'},material,{name:'AES-GCM',length:256},false,['decrypt']);
-    const clear=await crypto.subtle.decrypt({name:'AES-GCM',iv:decode(payload.iv),additionalData:new TextEncoder().encode('EPIK-II-STUDENT-v1')},key,encrypted);
-    const archive=JSON.parse(await new Response(new Blob([clear]).stream().pipeThrough(new DecompressionStream('gzip'))).text());field.value='';mountStudent(archive);
-  }catch(error){
-    status.textContent=error.message==='context'?word('context'):error.message==='download'?word('download'):word('password');
-    button.disabled=false;field.select();
-  }
-});
-
-document.getElementById('gate-language').onchange=event=>{selectLanguage(event.target.value);updateGate();};updateGate();
+    const packed=await response.arrayBuffer();if(packed.byteLength!==payload.bytes)throw new Error('download');
+    const digest=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',packed)),v=>v.toString(16).padStart(2,'0')).join('');if(digest!==payload.sha256)throw new Error('download');
+    const archive=JSON.parse(await new Response(new Blob([packed]).stream().pipeThrough(new DecompressionStream('gzip'))).text());mountStudent(archive);
+  }catch(error){status.textContent=word('download');button.disabled=false;}
+}
+document.getElementById('gate-form').addEventListener('submit',event=>{event.preventDefault();openAdventure();});
+document.getElementById('gate-language').onchange=event=>{selectLanguage(event.target.value);updateGate();};updateGate();openAdventure();
 </script></body></html>
