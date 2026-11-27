@@ -1,6 +1,6 @@
-# Aventura EPIK II · 0.12.23
+# Aventura EPIK II · 0.12.24
 
-Edición bilingüe español/inglés para estudiantes: campaña lineal, música, tres partidas locales, créditos, logros y certificado. Acceso directo, sin contraseña.
+Edición bilingüe español/inglés para estudiantes: campaña lineal, música, tres partidas locales, créditos, logros y certificado. Acceso directo, sin contraseña. Controles de mando estándar Xbox/PlayStation y botones táctiles ampliados para tablet.
 
 La aplicación se descarga al abrir el acceso; las imágenes y canciones se solicitan cuando se utilizan. Los medios tienen nombres derivados de su contenido para reutilizar la caché entre versiones. Las ilustraciones de distribución usan WebP; originales conservados en el proyecto del autor.
 
@@ -10,4 +10,4 @@ No incluye biblioteca del autor, editor, vistas de ensayo, solucionarios ni arch
 
 Esta entrega es pública y no solicita contraseña. El juego estático valida respuestas y guarda avances en el navegador: **no es un sistema de evaluación inviolable ni un certificado verificable por un servidor**. La ocultación de archivos y la política de contenido no impiden que una persona modifique su navegador. La validación y los resultados confiables requieren un servicio privado. Las versiones históricas conservadas no se eliminan con esta entrega.
 
-[Jugar](https://jiruma1004.github.io/Aventura-EPIK2/?v=0.12.23&release=78da85ffd755)
+[Jugar](https://jiruma1004.github.io/Aventura-EPIK2/?v=0.12.24&release=9c4c7a0676fa)
